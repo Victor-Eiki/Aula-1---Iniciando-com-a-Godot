@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://whc2le84ro05"]
+
+[ext_resource type="Script" uid="uid://buvyw61x8i0xk" path="res://scripts/cupreto.gd" id="1_hjaqi"]
+[ext_resource type="Texture2D" uid="uid://csq2476swylux" path="res://assets/ovo-removebg-preview.png" id="2_fvtld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct4mp"]
+size = Vector2(186, 288)
+
+[node name="player" type="CharacterBody2D" unique_id=360159189]
+script = ExtResource("1_hjaqi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1851734378]
+texture = ExtResource("2_fvtld")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1206833874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=395181824]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_ct4mp")

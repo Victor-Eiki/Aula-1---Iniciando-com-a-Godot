@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6jt26ry2tq7k"]
+
+[node name="player" type="CharacterBody2D" unique_id=360159189]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1851734378]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1206833874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=395181824]

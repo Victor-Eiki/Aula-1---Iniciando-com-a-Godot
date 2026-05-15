@@ -3,19 +3,22 @@
 [ext_resource type="PackedScene" uid="uid://whc2le84ro05" path="res://scene/player.tscn" id="1_tw77e"]
 [ext_resource type="Texture2D" uid="uid://cs07snhi0xd0v" path="res://assets/rolandia.jpg" id="2_rpurj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpurj"]
-size = Vector2(300, 43)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rpurj"]
 
 [node name="level1" type="Node2D" unique_id=277536925]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=978646309]
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=850103586]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=12138549]
+offset_left = -558.2203
+offset_top = -306.0
+offset_right = 555.9107
+offset_bottom = 320.0
 texture = ExtResource("2_rpurj")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=978646309]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=868478450]
-position = Vector2(0, 62.5)
-shape = SubResource("RectangleShape2D_rpurj")
+position = Vector2(2, 244.5)
+shape = SubResource("WorldBoundaryShape2D_rpurj")
 
 [node name="player" parent="." unique_id=360159189 instance=ExtResource("1_tw77e")]
 position = Vector2(6, 15)
